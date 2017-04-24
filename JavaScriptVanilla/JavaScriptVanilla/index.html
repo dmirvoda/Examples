@@ -1,0 +1,87 @@
+﻿<!doctype html>
+<html lang="en" data-framework="javascript">
+<head>
+    <meta charset="utf-8">
+    <title>VanillaJS • TodoMVC</title>
+    <link rel="stylesheet" href="node_modules/todomvc-common/base.css">
+    <link rel="stylesheet" href="node_modules/todomvc-app-css/index.css">
+    <link href="node_modules/todomvc-app-css/custom.css" rel="stylesheet" />
+</head>
+<body>
+    <section class="todoappOverallSection">
+        <!--added Instructions - Dennis-->
+        <section class="todoappHeaderInstructions">
+            <div class="demo">
+                <div class="colorPick normal">
+                    <label class="alignWithImage">Normal</label>
+                </div>
+                <div class="colorPick critical">
+                    <label class="alignWithImage">Critical</label>
+                </div>
+                <div class="colorPick urgent">
+                    <label class="alignWithImage">Urgent</label>
+                </div>
+            </div>
+        </section>
+        <section class="todoapp">
+            <!--added Header with drop down - Dennis-->
+            <header class="header">
+                <div class="inputContainer half last">
+                    <select class="taskCategory">
+                        <option value="2" color="green">Normal</option>
+                        <option value="0" color="red">Urgent</option>
+                        <option value="1" color="orange">Critical</option>
+                    </select>
+                </div>
+            </header>
+            <header class="header">
+                <h1>todos</h1>
+                <input class="new-todo" placeholder="What needs to be done?" autofocus>
+            </header>
+            <section class="main">
+                <input class="toggle-all" type="checkbox">
+                <label for="toggle-all">Mark all as complete</label>
+                <ul class="todo-list"></ul>
+            </section>
+            <footer class="footer">
+                <span class="todo-count"></span>
+                <ul class="filters">
+                    <li>
+                        <a href="#/" class="selected">All</a>
+                    </li>
+                    <li>
+                        <a href="#/active">Active</a>
+                    </li>
+                    <li>
+                        <a href="#/completed">Completed</a>
+                    </li>
+                </ul>
+                <button class="clear-completed">Clear completed</button>
+            </footer>
+        </section>
+    </section>
+    <footer class="info">
+        <p>Double-click to edit a todo</p>
+        <p>
+            Created by <a href="http://twitter.com/oscargodson">Oscar Godson</a>
+        </p>
+        <p>
+            Refactored by <a href="https://github.com/cburgmer">Christoph Burgmer</a>
+        </p>
+        <p>
+            Part of <a href="http://todomvc.com">TodoMVC</a>
+        </p>
+    </footer>
+    <script src="js/custom.js"></script>
+    <script src="js/underscore.js"></script>
+    <script src="node_modules/todomvc-common/base.js"></script>
+    <script src="js/helpers.js"></script>
+    <script src="js/store.js"></script>
+    <script src="js/model.js"></script>
+    <script src="js/template.js"></script>
+    <script src="js/view.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>
